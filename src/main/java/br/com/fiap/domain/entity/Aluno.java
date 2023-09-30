@@ -10,7 +10,7 @@ public class Aluno {
 
     private String matricula;
 
-    public Aluno() {
+    public Aluno(long idCliente, String nmCliente) {
     }
 
     public Aluno(Long id, String nome, String matricula, String email) {

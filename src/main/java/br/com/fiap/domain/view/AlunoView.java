@@ -52,7 +52,7 @@ public class AlunoView implements View<Aluno, Long> {
         } while (valido == false);
 
 
-        Aluno a = new Aluno();
+        Aluno a = new Aluno(resultSet.getLong("ID_CLIENTE"), resultSet.getString("NM_CLIENTE"));
         a.setNome(nome).setEmail(email).setMatricula(service.gerarMatricula());
         return service.persist(a);
 

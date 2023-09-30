@@ -1,29 +1,28 @@
 package br.com.fiap.domain.service;
 
 import br.com.fiap.domain.entity.Aluno;
-import br.com.fiap.exception.MetodoNaoImplementadoException;
+import br.com.fiap.exception.ConnectionFactory;
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Random;
-import java.util.regex.Pattern;
 
 public class AlunoService implements Service<Aluno, Long> {
 
 
     @Override
     public List<Aluno> findAll() {
-        throw new MetodoNaoImplementadoException("Método não Implementado");
+        throw new ConnectionFactory("Método não Implementado");
     }
 
     @Override
     public Aluno findById(Long id) {
-        throw new MetodoNaoImplementadoException("Método não Implementado");
+        throw new ConnectionFactory("Método não Implementado");
     }
 
     @Override
     public List<Aluno> findByName(String texto) {
-        throw new MetodoNaoImplementadoException("Método não Implementado");
+        throw new ConnectionFactory("Método não Implementado");
     }
 
     /**
@@ -36,7 +35,7 @@ public class AlunoService implements Service<Aluno, Long> {
      */
     @Override
     public Aluno persist(Aluno aluno) {
-        throw new MetodoNaoImplementadoException("Método não Implementado");
+        throw new ConnectionFactory("Método não Implementado");
     }
 
     /**
